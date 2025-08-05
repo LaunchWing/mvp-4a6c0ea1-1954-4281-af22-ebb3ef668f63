@@ -1,0 +1,21 @@
+{
+  "name": "resumecraft-ai",
+  "version": "1.0.0",
+  "description": "Crafting the Future of Your Career with AI-powered resume templates.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:static && npm run build:functions",
+    "build:static": "echo 'Building static assets...'", // Replace with actual build command
+    "build:functions": "echo 'Building functions...'", // Replace with actual build command
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^3.0.0",
+    "some-ai-library": "^1.0.0" // Replace with actual AI library you are using
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

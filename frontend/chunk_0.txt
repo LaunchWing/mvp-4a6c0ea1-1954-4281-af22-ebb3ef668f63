@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeCraft AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-ObS5fE3cE9uo4FWX1pNDBEP2.png?st=2025-08-05T16%3A21%3A34Z&se=2025-08-05T18%3A21%3A34Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-05T05%3A51%3A11Z&ske=2025-08-06T05%3A51%3A11Z&sks=b&skv=2024-08-04&sig=%2Bl02zuzfYIrK416m6oqBviEKQC%2BWjSlTsVrkpTEENJ4%3D" alt="ResumeCraft AI Logo" class="h-12">
+            <h1 class="text-2xl font-bold text-gray-800">ResumeCraft AI</h1>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl text-gray-800 font-semibold mb-4">Crafting the Future of Your Career</h2>
+        <p class="text-gray-600 mb-6">Welcome to ResumeCraft AI, where we help you create personalized, professional resumes with the power of AI.</p>
+        <form id="resume-form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="career-goals">
+                    Career Goals
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="career-goals" type="text" placeholder="Enter your career goals">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="industry">
+                    Industry
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="industry" type="text" placeholder="Enter your industry">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="skills">
+                    Skills
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="skills" type="text" placeholder="Enter your skills">
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="generateResume()">
+                    Generate Resume
+                </button>
+            </div>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

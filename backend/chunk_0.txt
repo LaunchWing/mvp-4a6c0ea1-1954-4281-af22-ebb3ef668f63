@@ -1,0 +1,32 @@
+export async function onRequest(context) {
+  const { request } = context;
+  const url = new URL(request.url);
+  const userId = url.searchParams.get('userId');
+
+  if (request.method === 'GET') {
+    // Fetch user profile data
+    const userProfile = await getUserProfile(userId);
+    return new Response(JSON.stringify({ success: true, userProfile }), {
+      headers: { 'Content-Type': 'application/json' },
+    });
+  } else if (request.method === 'POST') {
+    // Save user profile data
+    const data = await request.json();
+    const result = await saveUserProfile(userId, data);
+    return new Response(JSON.stringify({ success: result }), {
+      headers: { 'Content-Type': 'application/json' },
+    });
+  } else {
+    return new Response('Method Not Allowed', { status: 405 });
+  }
+}
+
+async function getUserProfile(userId) {
+  // Placeholder function to retrieve user profile data
+  return { userId, name: 'John Doe', preferences: {} };
+}
+
+async function saveUserProfile(userId, data) {
+  // Placeholder function to save user profile data
+  return true;
+}

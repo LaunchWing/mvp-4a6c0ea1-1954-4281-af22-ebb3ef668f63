@@ -1,0 +1,7 @@
+/resumecraft-ai
+  ├── /public
+  │   └── index.html  # Your main HTML file
+  ├── /functions
+  │   └── index.js    # Your Cloudflare Worker function
+  ├── package.json
+  └── wrangler.toml

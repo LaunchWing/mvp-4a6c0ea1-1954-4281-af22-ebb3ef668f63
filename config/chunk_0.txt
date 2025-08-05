@@ -1,0 +1,17 @@
+name = "resumecraft-ai"
+type = "javascript" # or "typescript" if you're using TypeScript
+
+account_id = "your-cloudflare-account-id" # Replace with your Cloudflare account ID
+workers_dev = true
+compatibility_date = "2023-10-01" # Adjust to the current date
+
+[env.production]
+zone_id = "your-zone-id" # Replace with your Cloudflare zone ID
+route = "resumecraftai.yourdomain.com/*" # Replace with your domain
+
+[site]
+bucket = "./public" # Directory containing your static files
+entry-point = "functions" # Directory containing your functions
+
+[build]
+command = "npm run build"

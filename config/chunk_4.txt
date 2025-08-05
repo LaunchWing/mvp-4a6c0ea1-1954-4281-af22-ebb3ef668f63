@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeCraft AI</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #4A4A4A; }
+        header { background-color: #4A90E2; padding: 20px; text-align: center; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ResumeCraft AI</h1>
+        <p>Crafting the Future of Your Career</p>
+    </header>
+    <main>
+        <p>Welcome to ResumeCraft AI, where we help you craft the perfect resume using the power of AI.</p>
+    </main>
+</body>
+</html>

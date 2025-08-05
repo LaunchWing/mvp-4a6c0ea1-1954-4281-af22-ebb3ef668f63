@@ -1,0 +1,24 @@
+export async function onRequest(context) {
+  const { request } = context;
+  try {
+    const data = await request.json();
+    const { userId, feedback } = data;
+
+    // Save feedback to the database or a third-party service
+    const result = await saveFeedback(userId, feedback);
+
+    return new Response(JSON.stringify({ success: result }), {
+      headers: { 'Content-Type': 'application/json' },
+    });
+  } catch (error) {
+    return new Response(JSON.stringify({ success: false, error: error.message }), {
+      headers: { 'Content-Type': 'application/json' },
+      status: 500,
+    });
+  }
+}
+
+async function saveFeedback(userId, feedback) {
+  // Placeholder function to save feedback
+  return true;
+}
